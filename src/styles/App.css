@@ -1,0 +1,41 @@
+.app {
+  min-height: 100vh;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.appContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.mainContent {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.productsSection {
+  flex: 1;
+}
+
+.cartSection {
+  width: 320px;
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .mainContent { flex-direction: column; }
+  .cartSection { width: 100%; position: static; }
+}
+
+@media (max-width: 768px) {
+  .app { padding: 10px; }
+  .mainContent { padding: 15px; }
+}
